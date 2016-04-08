@@ -4,7 +4,8 @@
 // This code is designed to work with the ADC121C021_SM72480_I2CS I2C Mini Module available from ControlEverything.com.
 // https://www.controleverything.com/products
 
-#include<Wire.h>
+#include <application.h>
+#include <spark_wiring_i2c.h>
 
 // SM72480 I2C address is 0x50(80)
 #define Addr 0x50
