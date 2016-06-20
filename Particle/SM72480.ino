@@ -56,7 +56,7 @@ void loop()
   }
 
   // Convert the data to 12-bits
-  int raw_adc = (data[0] & 0x0F) * 256 + data[1];
+  raw_adc = (data[0] & 0x0F) * 256 + data[1];
 
   // Output data to dashboard
   Particle.publish("Digital value of analog input  : ", String(raw_adc));
